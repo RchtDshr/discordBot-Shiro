@@ -170,10 +170,11 @@ function sendLongTimeMessage() {
   }
 }
 
-// Schedule the task to run every 28 days
-cron.schedule("0 0 */28 * *", () => {
+// Schedule the task to run every 10 days
+cron.schedule("0 0 */10 * *", () => {
   sendLongTimeMessage();
 });
+
 
 client.once("ready", () => {
   console.log("Bot is ready!");
