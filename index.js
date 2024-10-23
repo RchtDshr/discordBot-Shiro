@@ -166,7 +166,7 @@ const cron = require("node-cron");
 function sendLongTimeMessage() {
   const channel = client.channels.cache.get("849964444339142669"); // Replace with your channel ID
   if (channel) {
-    channel.send("It's been so long! I hope everyone's doing well!");
+    channel.send("It's been so long! How's @everyone doing lately!");
   }
 }
 
